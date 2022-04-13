@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Dev CheatSheets</title>
+
+    <!-- Remember to add the dot if not located in the same folder -->
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link href="./styles/reset.css" rel="stylesheet" />
+
+    <!-- Use an emoji as a favicon, just change the emoji (start key + . key) -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🖤</text></svg>"
+    />
+  </head>
+
+  <body>
+    
+    <!-- Header -->
+
+    <header>
+      <!-- Top Bar with logo and feedback -->
+      <div class="top">
+        <div>
+          <a href="https://www.linkedin.com/in/yiralinares/" target="_blank">
+            <img class="logo" src="./images/yira-logo.svg" alt="My personal logo" />
+          </a>
+          <a href="https://github.com/yiralinares/Project-Challenge-Cheatsheet" target="_blank">
+            <p class="feedback">Any feedback?</p>
+          </a>
+        </div>
+        
+      </div>
+
+
+
+
+      <!-- Banner with navegation -->
+      <main>
+        <!-- Left   -->
+        <div class="banner">
+          <h1>Web Dev<br>Cheat Sheets</h1>
+          <p class="description">
+            Welcome to my reference <span class="strong">cheat-sheet!</span> I hope this will help you build more websites
+            in the future!✌
+          </p>
+          <div class="author">
+            <img src="./images/profile-desc.svg" alt="My profile picture" />
+            <p>
+              by
+              <a href="">
+                <span>Yira Linares</a></span>
+                <br>A Full-Stack Engineer Codecademy's Student 
+            </p>
+          </div>
+        </div>
+
+        <!-- Right - Navigation buttons -->
+        <nav>
+          <div class="btn-group-1">
+            <a href="#html"><button>HTML</button></a>
+            <a href="#css"><button>CSS</button></a>
+            <a href="#comingsoon"><button>JS</button></a>
+          </div>
+          <div class="btn-group-2">
+            <a href="#cmdline"><button>CmdLine</button></a>
+            <a href="#comingsoon"><button>React</button></a>
+            <a href="#comingsoon"><button>Git</button></a>
+          </div>
+        </nav>
+
+        <!-- Secundary Navegation -->
+
+        <aside>
+          <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#comingsoon">JS</a></li>
+            <li><a href="#cmdline">CmdLine</a></li>
+            <li><a href="#comingsoon">React</a></li>
+            <li><a href="#comingsoon">Git</a></li>
+          </ul>
+        </aside>
+      </main>
+    </header>
+
+
+<!-- CheatSheets -->
+
+    <!-- HTML -->
+    <section id="html" class="background cheatsheets">
+      <div>
+        <img src="./images/cheatsheet-icon.svg" alt="html's icon" />
+        <h2>HTML Cheat Sheet</h2>
+        <h3>Common Tags</h3>
+        <!-- Table --> 
+        <table class="table1">
+    
+          <thead>
+            <tr>
+              <th>tag</th>
+              <th>attributes</th>
+              <th>example</th>
+              <th>description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--In every row I added a <th> for the tag names to be bold*/-->
+            <tr>
+              <th>&lt;link&gt;</th>
+              <td>href, rel</td>
+              <td>&lt;link href=“./folder/file” rel= stylesheet / &gt;</td>
+              <td>to link stylesheets, fonts...</td>
+            </tr>
+            <tr>
+              <th>&lt;img&gt;</th>
+              <td>src, alt</td>
+              <td>&lt;img src=“./folder/img” alt="My personal logo" / &gt;</td>
+              <td>to add pictures</td>
+            </tr>
+            <tr>
+              <th>&lt;a&gt;</th>
+              <td>href, target</td>
+              <td>&lt;a href="https://www.example.com" target=_blank>Click!&lt; /a&gt;</td>
+              <td>to link to ext./int. pages...</td>
+            </tr>
+            <tr>
+              <th>&lt;br&gt;</th>
+              <td>href, rel</td>
+              <td>HTML&lt;br&gt;Common Tags</td>
+              <td>to insert a line break</td>
+            </tr>
+            <tr>
+              <th>&lt;span&gt;</th>
+              <td>generics</td>
+              <td>&lt;span&gt;Hello!&lt; /span&gt;</td>
+              <td>it’s an inline element</td>
+            </tr>
+            <tr>
+              <th>&lt;div&gt;</th>
+              <td>generics</td>
+              <td>&lt;div&gt; &lt; /div&gt;</td>
+              <td>it’s a block element</td>
+            </tr>
+            <tr>
+              <th>&lt;button&gt;</th>
+              <td>type</td>
+              <td>&lt;button name=“favorite” type=“button”&gt;Like&lt; /button&gt;</td>
+              <td>needs an <a> tag</td>
+            </tr>
+            <tr>
+              <th>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</th>
+              <td>type</td>
+              <td>&lt;ul type=“square”&gt;&lt;li&gt;&lt; /li&gt;&lt;li&gt;&lt; /li&gt;&lt; /ul&gt;</td>
+              <td>list of items...</td>
+            </tr>
+            <tr>
+              <th>&lt;video&gt;</th>
+              <td>src, autoplay, poster</td>
+              <td>&lt;video src="videofile.ogg" autoplay poster="image.<br>jpg">Tu navegador no admite el elemento.&lt; /video&gt;</td>
+              <td>to add a video form local or ext.</td>
+            </tr>
+            
+          </tbody>
+        </table>
+       
+        <h3>Tables</h3>
+        <!-- Table -->
+        <table class="table2">
+          <tr>
+            <th>tag</th>
+            <th>attributes</th>
+            <th>description</th>
+          </tr>
+          <tr>
+            <th>&lt;table&gt;</th>
+            <td>-</td>
+            <td>table</td>
+          </tr>
+          <tr>
+            <th>&lt;tr&gt;</th>
+            <td>-</td>
+            <td>table row</td>
+          </tr>
+          <tr>
+            <th>&lt;th&gt;</th>
+            <td>rowspan, colspan</td>
+            <td>table header cell</td>
+          </tr>
+          <tr>
+            <th>&lt;td&gt;</th>
+            <td>rowspan, colspan</td>
+            <td>table data / cell</td>
+          </tr>
+          <tr>
+            <th>&lt;thead&gt;</th>
+            <td>-</td>
+            <td>group of header contents</td>
+          </tr>
+          <tr>
+            <th>&lt;tbody&gt;</th>
+            <td>-</td>
+            <td>group of body contents</td>
+          </tr>
+          <tr>
+            <th>&lt;tfootv&gt;</th>
+            <td>-</td>
+            <td>group of footer contents</td>
+          </tr>
+          <tr>
+            <th>&lt;colgroup&gt;</th>
+            <td>-</td>
+            <td>group of columns</td>
+          </tr>
+          <tr>
+            <th>&lt;col&gt;</th>
+            <td>-</td>
+            <td>column in a colgroup </td>
+          </tr>
+          <tr>
+            <th>&lt;caption&gt;</th>
+            <td>-</td>
+            <td>table caption</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- CSS -->
+    <section id="css" class="cheatsheets">
+      <div>
+        <img src="./images/layout.svg" alt="html's icon" />
+        <h2>CSS Cheat Sheet</h2>
+        <h3></h3>
+        <!-- Table -->
+        <table class="table3">
+
+          <tr>
+            <th>basic selectors</th>
+            <th>grouping selectors</th>
+            <th>combinators</th>
+            <th>pseudo</th>
+          </tr>
+
+          <tr>
+            <td>universal selector<br><span>syntax: * ns|* *|*
+example: * will match all the elements of the document.</span></td>
+            <td>selector list<br><span>syntax: A, B Example: div, span will match both &lt;span&gt; and &lt;div&gt; elements.</span></td>
+            <td>descendant combinator<br><span>syntax: A B
+Example: div span will match all <span> elements that are inside a &lt;div&gt; element.&lt; /span&gt;</td>
+            <td>pseudo classes<br><span>the : pseudo allow the selection of elements based on state information that is not contained in the document tree.
+Example: a:visited will match all &lt;a&gt; elements that have been visited by the user.</span></td>
+          </tr>
+
+          <tr>
+            <td>type selector<br><span>syntax: * ns|* *|*
+example: * will match all the elements of the document.</span></td>
+            <td></td>
+            <td>child combinator<br><span>syntax: A > B
+Example: ul > li will match all li elements that are nested directly inside a ul element.</span></td>
+            <td>paseudo elements<br><span>the :: pseudo represent entities that are not included in HTML.
+Example: p::first-line will match the first line of all p elements.</span></td>
+          </tr>
+
+          <tr>
+            <td>class selector<br><span>syntax: .classname
+Example: .index will match any element that has a class of "index".</span></td>
+            <td></td>
+            <td>general sibling combinator<br><span>syntax: A ~ B
+Example: p ~ span will match all span elements that follow a p, immediately or not.</span></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>id selector<br><span>syntax: #idname
+Example: #toc will match the element that has the ID "toc".</span></td>
+            <td></td>
+            <td>adjacent sibling combinator<br><span>syntax: A || B
+Example: col || td will match all td elements that belong to the scope of the col.</span></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>attribute selector<br><span>syntax: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+Example: [autoplay] will match all elements that have the autoplay attribute set (to any value).</span></td>
+            <td></td>
+            <td>column combinator<br><span>Syntax: A || B
+Example: col || td will match all td elements that belong to the scope of the col.</span></td>
+            <td></td>
+          </tr>
+        </table>
+        <h3></h3>
+      </div>
+      
+    </section>
+
+    <!-- CmdLine -->
+    <section id="cmdline" class="background cheatsheets">
+      <div>
+        <img src="./images/monitor.svg" alt="html's icon" />
+        <h2>Command Line Cheat Sheet</h2>
+        <!-- Table -->
+        <table class="table4">
+
+          <tr>
+            <th>directories</th>
+            <th>files</th>
+            <th>outputs</th>
+            <th>search</th>
+          </tr>
+
+          <tr>
+            <td>$ pwd<br><span>Display path of current working directory</span></td>
+            <td>$ touch &lt;file&gt;<br><span>update file access & modification time (and create &lt;file&gt; if it doesn't exist)</span></td>
+            <td>$ cat &lt;file&gt;&lt; /file&gt;<br><span>output the contents of &lt;life&gt;</span></td>
+            <td>$ find &lt;dir&gt; -name "&lt;file&gt;"<br><span>find all  files named &lt;file&gt; inside &lt;dir&gt;</span></td>
+            
+          </tr>
+
+          <tr>
+            <td>$ cd &lt;directory&gt;<br><span>change directory to &lt;directory&gt;</span></td>
+            <td>$cp &lt;file&gt;&lt;directory&gt;<br><span>copy &lt;file&gt; to &lt;directory&gt;</span></td>
+            <td>$ less &lt;file&gt;<br><span>output the contents of &lt;file&gt; using the less command (wich supports pagination etc.)</span></td>
+            <td>$ grep -rl "&lt;text&gt;" &lt;dir&gt;<br><span>search for all files containing &lt;text&gt; inside &lt;dir&gt;</span></td>
+          </tr>
+
+          <tr>
+            <td>$ cd .. &lt;file&gt;br><span>navigate to parent directory</span></td>
+            <td>$mv &lt;file&gt; &lt;directory&gt;<br><span>move &lt;file&gt; to &lt;directory&gt;</span></td>
+            <td>$ head &lt;file&gt;<br><span>output the first 10 lines of &lt;life&gt;</span></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>$ ls<br><span>list directory contents</span></td>
+            <td>$mv &lt;file-old&gt; &lt;file-new&gt;<br><span>rename &lt;file-old&gt; to &lt;file-new&gt;</span></td>
+            <td>$ &lt;cmd&gt; &gt; &lt;file&gt;<br><span>direct the output of &lt;cmd&gt; into &lt;file&gt;</span></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>$ ls -la<br><span>list detailed directory contents, including hidden files</span></td>
+            <td></td>
+            <td>$ &lt;cmd&gt; >> &lt;file&gt;<br><span>append the output of &lt;cmd&gt; to &lt;file&gt;
+</span></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>$ mkdir &lt;directory&gt;<br><span>create new directory named &lt;directory&gt;</span></td>
+            <td></td>
+            <td>$ &lt;cmd1&gt; | &lt;md2&gt;
+<br><span>Direct the output of &lt;cmd1&gt; to &lt;cmd2&gt;</span></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+
+
+    <!-- Coming Soon -->
+    <section>
+      <div id="comingsoon">
+        <div>
+          <img src="./images/server.svg" alt="html's icon" />
+          <h2>JavaScript Cheat Sheet</h2>
+        </div>
+        <div>
+          <img src="./images/link.svg" alt="html's icon" />
+          <h2>React Cheat Sheet</h2>
+        </div>
+        <div>
+          <img src="./images/settings.svg" alt="html's icon" />
+          <h2>Git Cheat Sheet</h2>
+        </div>
+      </div>
+      <p class="coming-soon">coming soon!🎈</p>
+    </section>
+
+    
+    
+
+        <!-- Footer -->
+
+    <footer>
+      <div>
+        <a href="https://github.com/yiralinares/Project-Challenge-Cheatsheet" target="_blank">
+          <p class="feedback">Any feedback?</p>
+        </a>
+        <p class="author-footer">2022<span class="strong"> Yira Linares</span>
+          <br>  With love from <span class="strong">Spain</span> 🖤</p>
+        <a href="https://www.linkedin.com/in/yiralinares/" target="_blank">
+          <img class="logo" src="./images/yira-logo.svg" alt="My personal logo" />
+        </a>
+      </div>
+    </footer>
+
+    
+  </body>
+</html>
